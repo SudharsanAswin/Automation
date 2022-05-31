@@ -10,5 +10,13 @@ public class GITClass {
 		System.out.println(2);
 
 	}
+	public void method4() {
+		System.out.println(2);
+		
+	}
+	public void method5() {
+		System.out.println(2);
+		
+	}
 
 }
