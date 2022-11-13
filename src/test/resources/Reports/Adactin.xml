@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="67.441829">
+<testcase classname="Validation of Adactin Web Application" name="TC01_Validation of Booking Order No in Adaction Web Application" time="67.441829">
+<system-out><![CDATA[Given User launch Adactin Web Page..........................................passed
+Then User verify Login Page is displayed....................................passed
+When User enters valid UserName and PassWord................................passed
+And User clicks Login Button................................................passed
+Then User verify Search Hotel Page id displayed.............................passed
+When User selects valid Location , Hotel and Room Type......................passed
+And User clicks Search Button...............................................passed
+Then User verify Select Hotel Page is displayed.............................passed
+When User clicks Radio button and clicks Continue button....................passed
+Then User verify Book a Hotel page is displayed.............................passed
+When User enters valid FirstName ,LastName ,Billing Address and Card Number.passed
+When User selects valid Card Type ,Expiry Month ,Expiry Year and enters CVV.passed
+And User clicks Book Now button.............................................passed
+Then User verify Booking order number is displayed..........................passed
+]]></system-out>
+</testcase>
+</testsuite>
