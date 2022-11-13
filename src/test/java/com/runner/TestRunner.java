@@ -13,12 +13,14 @@ import io.cucumber.junit.CucumberOptions;
 glue="com.step" ,dryRun=false ,
 plugin= {"json:src\\test\\resources\\Reports\\Sample.json" ,"rerun:src\\test\\resources\\Reports\\Failed.txt"} , tags="@sanity")
 public class TestRunner {
-	
+	public static String property;
+
 	
 	@AfterClass
 	public static void afterClass() {
- 
-		JvmReports.generateJvmReport("C:\\Users\\DEEPAK KUMAR M\\eclipse-workspace\\CucumberNew\\src\\test\\resources\\Reports\\Sample.json");
+		  property = System.getProperty("user.dir");
+
+		JvmReports.generateJvmReport(property+"/src/test/resources/Reports/Sample.json");
 	}
 
 	

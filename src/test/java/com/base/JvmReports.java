@@ -8,11 +8,11 @@ import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 
 public class JvmReports {
-
+	public static String property;
 	public static void generateJvmReport(String jsonFile) {
- 
-		File f=new File("C:\\Users\\DEEPAK KUMAR M\\eclipse-workspace\\CucumberNew\\src\\test\\resources\\Reports");
-		
+		  property = System.getProperty("user.dir");
+
+		File f=new File(property+"/src/test/resources/Reports");
 		Configuration c=new Configuration(f, "AdactinWebAutomation");
 		
 		c.addClassifications("platformName", "Windows");
